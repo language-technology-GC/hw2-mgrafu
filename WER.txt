@@ -1,3 +1,3 @@
 VERSION		TIME		WER
-AWS-Linux	 68sec.		35
+AWS-Linux	345sec.		16
 MacOS		366sec.		30
