@@ -15,5 +15,5 @@ fairseq-train \
     --lr .001 \
     --clip-norm 1 \
     --batch-size 50 \
-    --fp16-scale-window	800 \
+    --max-update 800 \
     --no-epoch-checkpoints
