@@ -7,8 +7,10 @@ fairseq-train \
     --encoder-bidirectional \
     --dropout .2 \
     --encoder-embed-dim 128 \
-    --decoder-embed-dim	128 \
-    --decoder-out-embed-dim	128 \
+    --decoder-embed-dim 128 \
+    --decoder-out-embed-dim 128 \
+    --decoder-hidden-size=512 \
+    --encoder-hidden-size=512 \
     --criterion label_smoothed_cross_entropy \
     --label-smoothing .1 \
     --optimizer adam \
