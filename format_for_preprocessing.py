@@ -5,11 +5,11 @@ from typing import List
 
 
 def output_formatted_files(path: str) -> None:
-    loc, file = os.path.split(path)
+    _, file = os.path.split(path)
     name, _ = os.path.splitext(file)
     lang, sample = name.split("_")
-    g_sink_path = os.path.join(loc, sample + "." + lang + ".g")
-    p_sink_path = os.path.join(loc, sample + "." + lang + ".p")
+    g_sink_path = sample + "." + lang + ".g"
+    p_sink_path = sample + "." + lang + ".p"
     with open(path, "r") as source, open(g_sink_path, "w") as g_sink, open(
         p_sink_path, "w"
     ) as p_sink:
