@@ -1,3 +1,4 @@
-VERSION		TIME		WER
-AWS-Linux	345sec.		16
-MacOS		686sec.		21
+VERSION		TIME		WER		MODEL
+AWS-Linux	 345sec.	16		Bidirectional LSTM
+MacOS		 686sec.	21		Bidirectional LSTM
+AWS-Linux	1363sec.	41		Transformer

@@ -4,18 +4,21 @@ fairseq-train \
     --target-lang ice.p \
     --seed 42 \
     --arch transformer \
-    --encoder-bidirectional \
-    --dropout .2 \
-    --encoder-embed-dim 128 \
-    --decoder-embed-dim 128 \
-    --decoder-out-embed-dim 128 \
-    --decoder-hidden-size=512 \
-    --encoder-hidden-size=512 \
+    --dropout .3 \
     --criterion label_smoothed_cross_entropy \
     --label-smoothing .1 \
     --optimizer adam \
     --lr .001 \
-    --clip-norm 1 \
-    --batch-size 50 \
+    --lr-scheduler inverse_sqrt \
+    --batch-size 200 \
     --max-update 800 \
+    --encoder-layers 4 \
+    --encoder-embed-dim 256 \
+    --encoder-ffn-embed-dim 1024 \
+    --decoder-layers 4 \
+    --decoder-embed-dim 256 \
+    --decoder-ffn-embed-dim 1024 \
+    --decoder-attention-heads 4 \
+    --cross-self-attention \
+    --layernorm-embedding \
     --no-epoch-checkpoints
