@@ -28,7 +28,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--path",
         type=str,
-        default="predictions.txt",
+        default="reports/predictions.txt",
         help="path to predictions text file",
     )
 

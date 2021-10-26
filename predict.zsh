@@ -5,4 +5,4 @@ fairseq-generate \
     --path checkpoints/checkpoint_best.pt \
     --gen-subset test \
     --beam 8 \
-    > predictions.txt
+    > reports/predictions.txt

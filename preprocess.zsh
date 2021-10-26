@@ -8,5 +8,5 @@ fairseq-preprocess \
     --tokenizer space \
     --thresholdsrc 2 \
     --thresholdtgt 2 \
-    > preprocessing_output.txt
+    > reports/preprocessing_output.txt
 rm dev.ice.g dev.ice.p test.ice.g test.ice.p train.ice.g train.ice.p

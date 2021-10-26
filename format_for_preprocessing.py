@@ -21,7 +21,9 @@ def output_formatted_files(path: str) -> None:
 
 
 def main() -> None:
-    file_paths: List[str] = ["ice_dev.tsv", "ice_test.tsv", "ice_train.tsv"]
+    file_paths: List[str] = ["data/ice_dev.tsv",
+                             "data/ice_test.tsv",
+                             "data/ice_train.tsv"]
     for path in file_paths:
         output_formatted_files(path)
 
